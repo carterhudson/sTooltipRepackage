@@ -1,1 +1,5 @@
-<manifest package="com.stooltip.repackage"/>
+<manifest package="com.stooltip.repackage"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application tools:replace="android:allowBackup" />
+</manifest>
