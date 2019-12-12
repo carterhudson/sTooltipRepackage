@@ -1,4 +1,4 @@
-package cl.jesualex.stooltip
+package com.stooltip.repackage
 
 /**
  * Created by jesualex on 2019-04-29.

@@ -1,23 +1,23 @@
-package cl.jesualex.stooltip
+package com.stooltip.repackage
 
 import android.graphics.Bitmap
 import android.graphics.Paint
 import android.graphics.Typeface
 import android.graphics.drawable.Drawable
-import android.support.annotation.AnimRes
-import android.support.annotation.ColorInt
-import android.support.annotation.DrawableRes
-import android.support.annotation.StringRes
 import android.text.Spanned
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
+import androidx.annotation.AnimRes
+import androidx.annotation.ColorInt
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 
 /**
  * Created by jesualex on 2019-04-29.
  */
 class TooltipBuilder(private val tooltip: Tooltip){
-    @JvmOverloads fun show(duration: Long = 0): Tooltip{
+    @JvmOverloads fun show(duration: Long = 0): Tooltip {
         tooltip.overlay.addView(tooltip.tooltipView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         return tooltip.show(duration)
     }
@@ -219,7 +219,7 @@ class TooltipBuilder(private val tooltip: Tooltip){
         return this
     }
 
-    @JvmOverloads fun animation(@AnimRes animIn: Int,@AnimRes animOut: Int = animIn): TooltipBuilder {
+    @JvmOverloads fun animation(@AnimRes animIn: Int, @AnimRes animOut: Int = animIn): TooltipBuilder {
         tooltip.animIn = animIn
         tooltip.animOut = animOut
         return this

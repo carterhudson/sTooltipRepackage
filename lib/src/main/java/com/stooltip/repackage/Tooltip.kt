@@ -1,11 +1,9 @@
-package cl.jesualex.stooltip
+package com.stooltip.repackage
 
 import android.app.Activity
 import android.content.Context
 import android.content.ContextWrapper
 import android.graphics.Rect
-import android.support.annotation.StringRes
-import android.support.v4.widget.NestedScrollView
 import android.text.Spanned
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +12,8 @@ import android.view.animation.AnimationUtils
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
-import com.stooltip.repackage.ChildView
+import androidx.annotation.StringRes
+import androidx.core.widget.NestedScrollView
 
 /**
  * Created by jesualex on 2019-04-25.
@@ -85,7 +84,7 @@ class Tooltip private constructor(private val activity: Activity, private val re
         }
     }
 
-    @JvmOverloads fun show(duration: Long = 0, text: String? = null): Tooltip{
+    @JvmOverloads fun show(duration: Long = 0, text: String? = null): Tooltip {
         refView.post {
             closeNow()
 
@@ -136,27 +135,27 @@ class Tooltip private constructor(private val activity: Activity, private val re
         return this
     }
 
-    fun show(duration: Long, @StringRes text: Int): Tooltip{
+    fun show(duration: Long, @StringRes text: Int): Tooltip {
         getTextView()?.setText(text)
         return show(duration)
     }
 
-    fun show(duration: Long, text: Spanned): Tooltip{
+    fun show(duration: Long, text: Spanned): Tooltip {
         getTextView()?.text = text
         return show(duration)
     }
 
-    fun show(@StringRes text: Int): Tooltip{
+    fun show(@StringRes text: Int): Tooltip {
         getTextView()?.setText(text)
         return show()
     }
 
-    fun show(text: Spanned): Tooltip{
+    fun show(text: Spanned): Tooltip {
         getTextView()?.text = text
         return show()
     }
 
-    fun show(text: String): Tooltip{
+    fun show(text: String): Tooltip {
         getTextView()?.text = text
         return show()
     }

@@ -1,17 +1,16 @@
-package cl.jesualex.stooltip
+package com.stooltip.repackage
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
 import android.os.Build
-import android.support.annotation.ColorInt
-import android.support.annotation.RequiresApi
-import android.support.v4.view.ViewCompat
 import android.util.AttributeSet
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import com.stooltip.repackage.ChildView
+import androidx.annotation.ColorInt
+import androidx.annotation.RequiresApi
+import androidx.core.view.ViewCompat
 import java.util.*
 
 /**
