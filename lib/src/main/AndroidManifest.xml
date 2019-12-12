@@ -1,1 +1,3 @@
-<manifest package="com.stooltip.repackage"/>
+<manifest package="com.stooltip.repackage">
+    <application/>
+</manifest>
