@@ -50,6 +50,11 @@ class TooltipBuilder(private val tooltip: Tooltip){
         return this
     }
 
+    fun drawablePadding(padding: Int): TooltipBuilder {
+        tooltip.getTextView()?.compoundDrawablePadding = padding
+        return this
+    }
+
     fun text(text: String): TooltipBuilder {
         tooltip.getTextView()?.text = text
 
